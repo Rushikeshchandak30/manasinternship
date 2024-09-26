@@ -1,17 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        darkBackground: '#0b0b0d', // Darker custom background
+        darkPrimary: '#0f3460', // Custom primary color
+        lightText: '#e94560', // Custom light text color
       },
     },
   },
+  variants: {},
   plugins: [],
 };
